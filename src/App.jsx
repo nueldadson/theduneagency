@@ -1,27 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Preloader from "./components/Preloader/Preloader";
-import Timer from "./components/Countdown/Timer";
-import Optin from "./components/Optin/Optin";
-
 import "./App.css";
 
-function App() {
+const App = () => {
 	return (
-		<div className="App">
-			<div className="container">
-				<h1>
-					Website
-					<br />
-					Coming Soon
-				</h1>
-				<Timer />
-				<Optin />
-				<Preloader />
-			</div>
+		<div className="container">
+			<h1>This Website is Undergoing Maintenance</h1>
+			<p>We would be back soon!</p>
+			<button className="smiley"></button>
 		</div>
 	);
-}
+};
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+export default App;
