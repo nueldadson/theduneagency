@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setIsLoading(false);
-		}, 1500); // Simulate 3 seconds loading
+		}, 1000); // Simulate 3 seconds loading
 		return () => clearTimeout(timer);
 	}, []);
 
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
 		enter: {
 			y: 0,
 			opacity: 1,
-			transition: { duration: 0.1, ease: "easeIn" },
+			transition: { duration: 0.5, ease: "easeIn" },
 		},
 	};
 

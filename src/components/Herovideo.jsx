@@ -1,15 +1,13 @@
 import React from "react";
-// Import assets
 import bgVideo from "../assets/videos/bgvid.mp4";
 import bgPoster from "../assets/images/hero.jpg";
-// import logo from "../assets/images/city.svg";
 import { Logowhite } from "../assets/images";
 
 const Herovideo = () => {
 	return (
 		<div id="hero-section" className="relative">
 			{/* Hero Unit */}
-			<div className="relative overflow-hidden w-full h-screen clip-angled-section">
+			<div className="relative overflow-hidden w-full h-screen">
 				{/* Video Background */}
 				<video
 					autoPlay
@@ -28,7 +26,7 @@ const Herovideo = () => {
 				{/* Hero Caption */}
 				<div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 text-center px-6">
 					{/* Logo */}
-					<div className="mb-">
+					<div className="mb-6">
 						<img
 							id="logo"
 							src={Logowhite}
@@ -52,11 +50,15 @@ const Herovideo = () => {
 					</a>
 
 					{/* Arrow */}
-					<a href="#features" className="">
-						<i
-							id="arrow"
-							className="text-4xl font-extrabold lnr lnr-chevron-down text-secondary animate-bounce"
-						></i>
+					<a
+						href="#features"
+						className="mt-6"
+						id="arrow"
+						style={{
+							animation: "bounce 2s infinite",
+						}}
+					>
+						<i className="text-4xl font-extrabold lnr lnr-chevron-down text-secondary"></i>
 					</a>
 				</div>
 			</div>
