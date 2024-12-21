@@ -1,15 +1,43 @@
-import React from "react";
-import { Logowhite } from "../../assets/images";
+import React, { useState, useEffect } from "react";
+import { Logowhite, Logo } from "../../assets/images";
 import { navLinks } from "../../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const Nav = ({ isOpen, toggle, toggleActive }) => {
+const Nav = ({ isOpen, toggle }) => {
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	// Scroll event listener
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > window.innerHeight) {
+				setIsScrolled(true);
+			} else {
+				setIsScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
-		<header className=" bg-black bg-opacity-0 fixed w-full text-white h-24 flex items-center justify-between z-50 px-44 max-lg:px-16 max-md:px-10 ">
+		<header
+			className={`fixed w-full h-24 flex items-center justify-between z-50 px-44 max-lg:px-16 max-md:px-10 transition-all duration-300 ${
+				isScrolled
+					? "bg-white text-black shadow-lg"
+					: "bg-black bg-opacity-0 text-white"
+			}`}
+		>
 			{/* Logo */}
 			<a href="/" className="flex items-center h-full py-4">
-				<img src={Logowhite} alt="Logo" className="h-full" />
+				<img
+					src={isScrolled ? Logo : Logowhite}
+					alt="Logo"
+					className="h-full"
+				/>
 			</a>
 
 			{/* Navigation */}
@@ -19,7 +47,9 @@ const Nav = ({ isOpen, toggle, toggleActive }) => {
 						<li key={item.label}>
 							<a
 								href={item.href}
-								className="font-montserrat  leading-normal text-coral-red font-semibold hover:text-secondary"
+								className={`font-montserrat leading-normal font-semibold hover:text-secondary ${
+									isScrolled ? "text-black" : "text-white"
+								}`}
 							>
 								{item.label}
 							</a>
@@ -33,15 +63,6 @@ const Nav = ({ isOpen, toggle, toggleActive }) => {
 						onClick={toggle}
 					/>
 				</div>
-				{/* <a href="#features" className="">
-					Features
-				</a>
-				<a href="#pricing" className="hover:text-secondary">
-					Pricing
-				</a>
-				<a href="#footer" className="hover:text-secondary">
-					Contact
-				</a> */}
 			</nav>
 		</header>
 	);
