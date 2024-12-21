@@ -20,7 +20,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 			<SidebarContainer
 				isOpen={isOpen}
 				onClick={toggle}
-				className="sidebar container"
+				className="sidebar containerr"
 			>
 				<img src={Logowhite} alt="logo" className=" w-24 mt-4 ml-8 absolute" />
 				<Icon
