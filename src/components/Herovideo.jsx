@@ -7,7 +7,12 @@ const Herovideo = () => {
 	return (
 		<div id="hero-section" className="relative">
 			{/* Hero Unit */}
-			<div className="relative overflow-hidden w-full h-screen">
+			<div
+				className="relative overflow-hidden w-full h-[120vh]"
+				style={{
+					clipPath: "polygon(100% 80%, 50% 100%, 0 80%, 0 0, 100% 0)",
+				}}
+			>
 				{/* Video Background */}
 				<video
 					autoPlay
