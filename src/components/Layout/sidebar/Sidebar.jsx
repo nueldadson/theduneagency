@@ -11,7 +11,7 @@ import {
 	InstagramIcon,
 	TwitterIcon,
 } from "./Sidebarelements";
-import "./Sidebar.css";
+import "./sidebar.css";
 import { Logowhite } from "../../../assets/images";
 
 const Sidebar = ({ isOpen, toggle }) => {
