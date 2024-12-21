@@ -74,7 +74,7 @@ const Carousel = () => {
 	return (
 		<div
 			ref={carouselRef}
-			className=" carousell relative overflow-hidden py-24  bg-white"
+			className=" carousell relative overflow-hidden py-24 max-sm:pt-8 max-sm:pb-10 bg-white"
 		>
 			{/* Slides */}
 			<div
@@ -84,7 +84,7 @@ const Carousel = () => {
 				{slides.map((slide) => (
 					<div
 						key={slide.id}
-						className="flex-none w-full md:flex md:flex-row-reverse items-center px-28 max-sm:p-1"
+						className="flex-none w-full md:flex md:flex-row-reverse items-center px-28 max-sm:px-6"
 					>
 						{/* Image */}
 						<div className="w-full md:w-1/2 p-4">
