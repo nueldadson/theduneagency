@@ -6,7 +6,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = ({ isOpen, toggle, toggleActive }) => {
 	return (
-		<header className="bg-black bg-opacity-0 fixed w-full text-white h-24 flex items-center justify-between z-50 px-44 max-lg:px-16 max-md:px-10 ">
+		<header className=" bg-black bg-opacity-0 fixed w-full text-white h-24 flex items-center justify-between z-50 px-44 max-lg:px-16 max-md:px-10 ">
 			{/* Logo */}
 			<a href="/" className="flex items-center h-full py-4">
 				<img src={Logowhite} alt="Logo" className="h-full" />
@@ -14,7 +14,7 @@ const Nav = ({ isOpen, toggle, toggleActive }) => {
 
 			{/* Navigation */}
 			<nav className="flex h-full items-center">
-				<ul className="flex space-x-6 justify-end mr-5 items-center max-sm:hidden">
+				<ul className="flex space-x-6 justify-end mr-5 items-center max-sm:hidden text-lg">
 					{navLinks.map((item) => (
 						<li key={item.label}>
 							<a

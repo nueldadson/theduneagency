@@ -75,7 +75,7 @@ const Layout = ({ children }) => {
 					initial="hidden"
 					animate="enter"
 					variants={mainVariants}
-					className="flex-grow"
+					className="flex-grow "
 				>
 					<Nav isOpen={isOpen} toggle={toggle} />
 					<Sidebar isOpen={isOpen} toggle={toggle} />
