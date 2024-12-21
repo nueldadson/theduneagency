@@ -78,3 +78,34 @@ li p {
 	background: #fff;
 	text-align: center;
 }
+
+.carousel-container {
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel-slide {
+	transition: transform 0.7s ease-in-out;
+	display: flex;
+}
+
+.carousel-indicator {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 8px;
+}
+
+.carousel-indicator div {
+	width: 8px;
+	height: 8px;
+	background-color: #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.carousel-indicator div.active {
+	background-color: #ffd012;
+}

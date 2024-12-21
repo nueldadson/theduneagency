@@ -1,5 +1,5 @@
 import React from "react";
-import { Herovideo, Features } from "../components";
+import { Herovideo, Features, Carousel } from "../components";
 
 const Home = () => {
 	return (
@@ -7,6 +7,7 @@ const Home = () => {
 			<h1 className="">
 				<Herovideo />
 				<Features />
+				<Carousel />
 			</h1>
 		</div>
 	);
