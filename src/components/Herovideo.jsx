@@ -5,12 +5,17 @@ import { Logowhite } from "../assets/images";
 
 const Herovideo = () => {
 	return (
-		<div id="hero-section" className="relative">
+		<div id="hero-section" className="relative bg-[#f3f4f6]">
 			{/* Hero Unit */}
 			<div
-				className="relative overflow-hidden w-full h-[calc(100vh+125px)]"
+				className=" relative overflow-hidden w-full min-h-[calc(100vh+125px)] bg-[#f3f4f6]"
 				style={{
-					clipPath: "polygon(100% 80%, 50% 100%, 0 80%, 0 0, 100% 0)", // Angled section
+					clipPath: "polygon(100% 80%, 50% 100%, 0 80%, 0 0, 100% 0)",
+					WebkitMaskImage:
+						"linear-gradient(to bottom right, rgba(255, 208, 18, 1) 50%, rgba(0, 0, 0, 0) 1000%)",
+					maskImage:
+						"linear-gradient(to bottom right, rgba(255, 208, 18, 1) 50%, rgba(0, 0, 0, 0) 1000%)",
+					willChange: "clip-path",
 				}}
 			>
 				{/* Video Background */}
