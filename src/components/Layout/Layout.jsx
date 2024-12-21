@@ -31,6 +31,12 @@ const Layout = ({ children }) => {
 		},
 	};
 
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggle = () => {
+		setIsOpen(!isOpen);
+	};
+
 	return (
 		<div className="min-h-screen flex flex-col">
 			{/* Loading Screen */}
@@ -71,8 +77,8 @@ const Layout = ({ children }) => {
 					variants={mainVariants}
 					className="flex-grow"
 				>
-					<Nav />
-					<Sidebar />
+					<Nav isOpen={isOpen} toggle={toggle} />
+					<Sidebar isOpen={isOpen} toggle={toggle} />
 					<main className="flex-grow bg-gray-100">{children}</main>
 					<Footer />
 				</motion.div>

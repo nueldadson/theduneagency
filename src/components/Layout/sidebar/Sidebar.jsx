@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 				className="sidebar container"
 			>
 				<img src={Logowhite} alt="logo" className=" w-24 mt-4 ml-8 absolute" />
-				<Icon onClick={toggle} className="mr-8 mt-2">
+				<Icon onClick={toggle} className="mr-3 mt-2">
 					<CloseIcon />
 				</Icon>
 				<SidebarContent>
