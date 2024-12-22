@@ -1,5 +1,6 @@
 import React from "react";
 import { hero } from "../assets/images"; // Ensure the image path is correct
+import { Slide } from "react-awesome-reveal";
 
 const Testimonials = () => {
 	return (
@@ -18,18 +19,24 @@ const Testimonials = () => {
 			{/* Content */}
 			<div className="relative sm:px-6 max-md:px-16 md:px-44 z-10">
 				{/* Testimonial Title */}
-				<h2 className="text-2xl md:text-3xl font-bold mb-4">
-					<span className="text-yellow-500">"My Dream Apartment"</span>
-				</h2>
+				<Slide duration={500} direction="up">
+					<h2 className="text-2xl md:text-3xl font-bold mb-4">
+						<span className="text-yellow-500">"My Dream Apartment"</span>
+					</h2>
+				</Slide>
 				{/* Testimonial Text */}
-				<p className="text-md md:text-lg mb-6">
-					Lorem ipsum dolor sit amet, cu assentior voluptaria consequuntur usu,
-					ut nam assum verterem, his unum scripserit suscipiantur no. Graeci
-					fabellas vix at. Et mei quidam fuisset, vis purto percipit cu. Pro
-					audire consequuntur an, eum id consul scribentur.
-				</p>
+				<Slide duration={700} direction="up">
+					<p className="text-md md:text-lg mb-6">
+						Lorem ipsum dolor sit amet, cu assentior voluptaria consequuntur
+						usu, ut nam assum verterem, his unum scripserit suscipiantur no.
+						Graeci fabellas vix at. Et mei quidam fuisset, vis purto percipit
+						cu. Pro audire consequuntur an, eum id consul scribentur.
+					</p>
+				</Slide>
 				{/* Testimonial Author */}
-				<p className="font-semibold text-lg md:text-xl">- JOHN DOE</p>
+				<Slide duration={900} direction="up">
+					<p className="font-semibold text-lg md:text-xl">- JOHN DOE</p>
+				</Slide>
 			</div>
 		</div>
 	);

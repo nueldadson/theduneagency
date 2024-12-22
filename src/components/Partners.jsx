@@ -6,6 +6,7 @@ import {
 	partner4,
 	partner5,
 } from "../assets/images";
+import { Slide } from "react-awesome-reveal";
 
 const Partners = () => {
 	const carouselRef = useRef(null);
@@ -56,9 +57,14 @@ const Partners = () => {
 
 	return (
 		<div className="w-full py-8 bg-white flex items-center justify-center flex-col">
-			<h2 className="text-center text-gray-600 text-lg font-semibold mb-6">
-				Trusted by The World's Best
-			</h2>
+			{/* Slide animation for the heading */}
+			<Slide direction="right" duration={500}>
+				<h2 className="text-center text-gray-600 text-lg font-semibold mb-6">
+					Trusted by The World's Best
+				</h2>
+			</Slide>
+
+			{/* Carousel */}
 			<div
 				ref={carouselRef}
 				className="flex overflow-hidden w-[70%] justify-start px-4 cursor-grab select-none"
