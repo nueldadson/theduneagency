@@ -1,4 +1,4 @@
-// import { Logo } from "../assets/images";
+import React from "react";
 import {
 	SidebarContainer,
 	Icon,
@@ -17,17 +17,14 @@ import { Logowhite } from "../../../assets/images";
 const Sidebar = ({ isOpen, toggle }) => {
 	return (
 		<>
+			{/* Prevent isOpen from being passed to the DOM */}
 			<SidebarContainer
-				isOpen={isOpen}
+				$isOpen={isOpen}
 				onClick={toggle}
 				className="sidebar containerr"
 			>
 				<img src={Logowhite} alt="logo" className=" w-24 mt-4 ml-8 absolute" />
-				<Icon
-					onClick={toggle}
-					className="mr-3npx workbox-cli generateSW workbox-config.cjs
- mt-2"
-				>
+				<Icon onClick={toggle} className="mr-3npx mt-2">
 					<CloseIcon />
 				</Icon>
 				<SidebarContent>

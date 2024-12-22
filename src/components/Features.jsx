@@ -7,9 +7,9 @@ const Features = () => {
 			<div className="mx-auto px-4">
 				{/* Section Heading */}
 				<div className="text-center mb-10">
-					<h2 className="text-3xl md:text-4xl font-semibold text-black">
+					<p className="text-3xl md:text-4xl font-semibold text-black">
 						Why Choose Us?
-					</h2>
+					</p>
 				</div>
 
 				{/* Features */}

@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin|Raleway:300"); /* Cabin and Raleway Font */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css?family=Cabin|Raleway:300"); /* Cabin and Raleway Font */
 * {
 	transition: ease-in-out 0.3s;
 }

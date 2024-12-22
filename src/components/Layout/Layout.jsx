@@ -78,6 +78,7 @@ const Layout = ({ children }) => {
 					className="flex-grow "
 				>
 					<Nav isOpen={isOpen} toggle={toggle} />
+					{/* Pass transient prop */}
 					<Sidebar isOpen={isOpen} toggle={toggle} />
 					<main className="flex-grow bg-gray-100">{children}</main>
 					<Footer />
