@@ -96,8 +96,8 @@ const Carousel = () => {
 						</div>
 
 						{/* Text */}
-						<div className="w-full md:w-1/2 p-4 flex flex-col justify-center text-center md:text-left">
-							<h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+						<div className="w-full md:w-1/2 p-4 flex flex-col justify-center text-center items-center ">
+							<h3 className="w-fit text-2xl md:text-3xl font-bold text-black mb-4 border-b-4 border-secondary border-dotted ">
 								{slide.title}
 							</h3>
 							<p className="text-gray-600">{slide.text}</p>
