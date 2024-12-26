@@ -3,9 +3,12 @@ import { hero } from "../assets/images";
 
 const Search = () => {
 	return (
-		<div className="w-full py-24 flex items-center justify-center px-8  sm:px-18 md:px-56">
+		<div
+			id="pricing"
+			className="w-full py-24 flex items-center justify-center px-8  sm:px-18 md:px-56"
+		>
 			<div
-				className="bg-white rounded-3xl shadow-lg py-14 px-6 md:px-14 w-full bg-secondary "
+				className="rounded-3xl shadow-lg py-14 px-6 md:px-14 w-full bg-secondary "
 				style={{
 					backgroundImage: `url(${hero})`,
 					backgroundSize: "cover",
