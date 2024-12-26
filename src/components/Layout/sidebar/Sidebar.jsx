@@ -40,7 +40,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 						</SidebarLink>
 					</SidebarMenu>
 					<SidebarIcon>
-						<a href="https://linkedin.com/company/theduneagency">
+						<a href="https://linkedin.com/company/the-dune-agency">
 							<LinkedinIcon />
 						</a>
 						<a href="https://instagram.com/theduneagency/">
