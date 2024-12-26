@@ -33,6 +33,11 @@ export const Icon = styled.div`
 
 export const SidebarContent = styled.div`
 	color: #fff;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 50px 0px;
 `;
 export const SidebarMenu = styled.ul`
 	z-index: 1000 !important;
