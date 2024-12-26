@@ -71,10 +71,35 @@ const Carousel = () => {
 		startSlider();
 	};
 
+	// Swipe functionality
+	let startX = 0;
+	let endX = 0;
+
+	const handleTouchStart = (e) => {
+		startX = e.touches[0].clientX;
+	};
+
+	const handleTouchMove = (e) => {
+		endX = e.touches[0].clientX;
+	};
+
+	const handleTouchEnd = () => {
+		if (startX - endX > 50) {
+			// Swipe left
+			setCurrentSlide((prev) => (prev + 1) % slides.length);
+		} else if (endX - startX > 50) {
+			// Swipe right
+			setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+		}
+	};
+
 	return (
 		<div
 			ref={carouselRef}
-			className=" carousell relative overflow-hidden py-24 max-sm:pt-8 max-sm:pb-10 bg-white"
+			className="carousell relative overflow-hidden py-24 max-sm:pt-8 max-sm:pb-10 bg-white"
+			onTouchStart={handleTouchStart}
+			onTouchMove={handleTouchMove}
+			onTouchEnd={handleTouchEnd}
 		>
 			{/* Slides */}
 			<div
@@ -97,7 +122,7 @@ const Carousel = () => {
 
 						{/* Text */}
 						<div className="w-full md:w-1/2 p-4 flex flex-col justify-center text-center items-center ">
-							<h3 className="w-fit text-2xl md:text-3xl font-bold text-black mb-4 border-b-4 border-secondary border-dotted ">
+							<h3 className="w-fit text-2xl md:text-4xl font-bold text-black mb-4">
 								{slide.title}
 							</h3>
 							<p className="text-gray-600">{slide.text}</p>

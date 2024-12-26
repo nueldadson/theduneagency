@@ -12,14 +12,14 @@ const Layout = ({ children }) => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setIsLoading(false);
-		}, 1000); // Simulate 3 seconds loading
+		}, 1500); // Simulate 3 seconds loading
 		return () => clearTimeout(timer);
 	}, []);
 
 	// Animation Variants
 	const loaderVariants = {
 		hidden: { y: 0 },
-		exit: { y: "-100%", transition: { duration: 1, ease: "easeInOut" } },
+		exit: { y: "-100%", transition: { duration: 0.5, ease: "easeInOut" } },
 	};
 
 	const mainVariants = {
@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
 					variants={loaderVariants}
 				>
 					<img
-						className="loader-logo w-96 mb-4"
+						className="loader-logo w-60 mb-4"
 						src={Logo}
 						alt="loading screen logo"
 					/>

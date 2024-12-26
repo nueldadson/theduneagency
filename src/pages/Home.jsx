@@ -5,6 +5,7 @@ import {
 	Carousel,
 	Testimonials,
 	Partners,
+	Search,
 } from "../components";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
 				<Features />
 				<Carousel />
 				<Testimonials />
+				<Search />
 				<Partners />
 			</h1>
 		</div>
