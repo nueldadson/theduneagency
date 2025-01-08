@@ -34,7 +34,7 @@ const Features = () => {
 					</Slide>
 					<div className="mt-4 px-8 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-4 ">
 						<Slide direction="up" duration={500}>
-							<div className="feature bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition mb-4 scale-95">
+							<div className="feature bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition mb-4 scale-95 h-[100%]">
 								<i className="lnr lnr-apartment text-yellow-500 text-6xl mb-6 block mx-auto"></i>
 								<h3 className="text-lg font-semibold text-gray-800 mb-4">
 									BREATHTAKING VIEWS
@@ -49,7 +49,7 @@ const Features = () => {
 
 						{/* Feature Card 2 */}
 						<Slide direction="up" duration={700}>
-							<div className="feature bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition mb-4 scale-95">
+							<div className="feature bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition mb-4 scale-95 h-[100%]">
 								<i className="lnr lnr-diamond text-yellow-500 text-6xl mb-6 block mx-auto"></i>
 								<h3 className="text-lg font-semibold text-gray-800 mb-4">
 									ELEVATED LUXURY
@@ -64,7 +64,7 @@ const Features = () => {
 
 						{/* Feature Card 3 */}
 						<Slide direction="up" duration={900}>
-							<div className="feature bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition mb-4 scale-95">
+							<div className="feature bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition mb-4 scale-95 h-[100%]">
 								<i className="lnr lnr-lock text-yellow-500 text-6xl mb-6 block mx-auto"></i>
 								<h3 className="text-lg font-semibold text-gray-800 mb-4">
 									UNWAVERING SECURITY
@@ -79,7 +79,7 @@ const Features = () => {
 
 						{/* Feature Card 3 */}
 						<Slide direction="up" duration={900}>
-							<div className="feature bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition mb-4 scale-95">
+							<div className="feature bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition mb-4 scale-95 h-[100%]">
 								<i className="lnr lnr-lock text-yellow-500 text-6xl mb-6 block mx-auto"></i>
 								<h3 className="text-lg font-semibold text-gray-800 mb-4">
 									UNWAVERING SECURITY

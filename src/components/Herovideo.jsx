@@ -48,11 +48,13 @@ const Herovideo = () => {
 						</div> */}
 
 						{/* Headline */}
-						<div className="animation-element slide-down space-y-2 mb-6">
-							<h1 className="uppercase text-4xl md:text-6xl font-bold">
+						<div className="animation-element slide-down space-y-1 mb-4">
+							<h1 className="uppercase text-3xl md:text-6xl font-bold">
 								Dune Agency
 							</h1>
-							<p className="text-lg md:text-2xl ">Where Land Meets Legacy</p>
+							<p className="text-lg md:text-lg ">
+								one connection, one deal, one dream at a time.
+							</p>
 						</div>
 
 						{/* Call to Action */}

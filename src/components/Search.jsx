@@ -22,7 +22,7 @@ const Search = () => {
 						<h2 className="text-3xl font-extrabold text-center text-black mb-6">
 							Search Your Property
 						</h2>
-						<div className="flex flex-col md:flex-row rounded-xl  py-12 px-4 md:px-12 gap-3 bg-white bg-opacity-70">
+						<div className="flex flex-col md:flex-row rounded-xl  py-12 px-4 md:px-12 gap-3 bg-white bg-opacity-80">
 							<div className="grid grid-cols-1 md:grid-cols-3 gap-3  w-full">
 								{/* Location Dropdown */}
 								<div className="relative">

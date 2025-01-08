@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 	// Animation Variants
 	const loaderVariants = {
 		hidden: { y: 0 },
-		exit: { y: "-100%", transition: { duration: 0.5, ease: "easeInOut" } },
+		exit: { y: "-100%", transition: { duration: 0, ease: "easeInOut" } },
 	};
 
 	const mainVariants = {
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
 		enter: {
 			y: 0,
 			opacity: 1,
-			transition: { duration: 0.5, ease: "easeIn" },
+			transition: { duration: 0, ease: "easeIn" },
 		},
 	};
 
@@ -54,18 +54,6 @@ const Layout = ({ children }) => {
 						src={Logo}
 						alt="loading screen logo"
 					/>
-					<p className="loader-logo text-2xl font-bold text-gray-800">
-						The Dune Agency
-					</p>
-					<motion.div
-						id="progress"
-						className="w-full h-[2px] bg-yellow-400 mt-6"
-						style={{ originX: 0 }}
-						initial={{ scaleX: 0 }}
-						animate={{ scaleX: 1 }}
-						transition={{ duration: 3, ease: "easeInOut" }}
-					></motion.div>
-					<p className="loader-text mt-4 text-gray-800 text-lg">LOADING</p>
 				</motion.div>
 			)}
 
